@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Length converter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="align-items-center justify-content-center d-flex" style="min-height: 100vh">
+    <div class="card border-primary">
+      <div class="card-header text-bg-primary">Length Converter</div>
+      <div class="card-body">
+        <div class="row row-cols-2 col mb-3 fw-bold text-center border-bottom pb-3">
+            <div>Metric measurement system</div>
+            <div>Imperial measurement system</div>
+        </div>
+        <div class="row row row-cols-2">
+            <div class="col mb-3">
+                <label for="millimeter" class="form-label">Millimeter (mm)</label>
+                <input type="number" class="form-control" id="millimeter" onkeyup="converter('millimeter')" inputmode="decimal" name="millimeter" />
+            </div>
+            <div class="col mb-3">
+                <label for="inch" class="form-label">inch (in)</label>
+                <input type="number" class="form-control" id="inch" onkeyup="converter('inch')" inputmode="decimal" name="inch" />
+            </div>
+            <div class="col mb-3">
+                <label for="centimeter" class="form-label">Centimeter (cm)</label>
+                <input type="number" class="form-control" id="centimeter" onkeyup="converter('centimeter')" inputmode="decimal" name="centimeter" />
+            </div>
+            <div class="col mb-3">
+                <label for="foot" class="form-label">Foot (ft)</label>
+                <input type="number" class="form-control" id="foot" onkeyup="converter('foot')" inputmode="decimal" name="foot" />
+            </div>
+            <div class="col mb-3">
+                <label for="meter" class="form-label">Meter (m)</label>
+                <input type="number" class="form-control" id="meter" onkeyup="converter('meter')" inputmode="decimal" name="meter" />
+            </div>
+            <div class="col mb-3">
+                <label for="yard" class="form-label">Yard (yd)</label>
+                <input type="number" class="form-control" id="yard" onkeyup="converter('yard')" inputmode="decimal" name="yard" />
+            </div>
+            <div class="col mb-3">
+                <label for="kilometer" class="form-label">Kilometer (km)</label>
+                <input type="number" class="form-control" id="kilometer" onkeyup="converter('kilometer')" inputmode="decimal" name="kilometer" />
+            </div>
+            <div class="col mb-3">
+                <label for="mile" class="form-label">Mile (mi)</label>
+                <input type="number" class="form-control" id="mile" onkeyup="converter('mile')" inputmode="decimal" name="mile" />
+            </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
